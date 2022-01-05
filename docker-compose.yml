@@ -3,5 +3,7 @@ services:
   web:
     build: .
     ports:
-      - "3300:3000"
+    - "3300:3000"
+    volumes:
+    - /tmp/alpine:/config
 
